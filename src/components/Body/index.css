@@ -1,0 +1,130 @@
+/* Write your CSS here */
+.body-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .body-container {
+    flex-direction: row;
+  }
+}
+.leftBar-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #e2e8f0;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.left-ul-container {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+.left-menu {
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 20px;
+}
+.item-text {
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f5f9;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.content-text {
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 22px;
+}
+.content-description {
+  text-align: center;
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 23px;
+}
+
+.right-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2e8f0;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #475569;
+  padding: 20px;
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 23px;
+  width: 40%;
+  height: 200px;
+  margin-right: 10px;
+}
+.content-text {
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 22px;
+}
+@media screen and (min-width: 768px) {
+  .leftBar-container {
+    width: 30%;
+    align-items: flex-start;
+    margin-right: 5px;
+  }
+  .left-ul-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content-container {
+    width: 100%;
+    align-items: flex-start;
+    margin-right: 5px;
+  }
+  .content-description {
+    text-align: start;
+  }
+
+  .right-bar-container {
+    width: 30%;
+    align-items: flex-start;
+  }
+  .box-container {
+    flex-direction: column;
+  }
+  .box {
+    width: 90%;
+    height: 150px;
+  }
+  .content-heading {
+    text-align: left;
+  }
+}
